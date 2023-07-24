@@ -6,7 +6,7 @@ string[] ArrayString()
     return Console.ReadLine()!.Replace("\"", "").Split(", ").ToArray();
 }
 
-int Sizearray2(string[] array, int n)
+int SizeArray2(string[] array, int n)
 {
     int count = 0;
     for (int j = 0; j < array.Length; j++)
@@ -21,7 +21,7 @@ int Sizearray2(string[] array, int n)
 
 string[] SecondArray(string[] array, int n)
 {
-    string[] result = new string[Sizearray2(array, n)];
+    string[] result = new string[SizeArray2(array, n)];
     for (int i = 0, j = 0; i < array.Length; i++)
     {
         if(array[i].Length <= n)
